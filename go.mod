@@ -1,4 +1,4 @@
-module sp
+module github.com/shengwudiyi/stolen-plane
 
 go 1.13
 
