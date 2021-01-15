@@ -24,8 +24,12 @@ func New(log Logger, opts ...Option) *Entry {
 	}
 }
 
-func Default(entry *Entry) {
+func AsDefault(entry *Entry) {
 	defaultEntry = entry
+}
+
+func GetDefault() *Entry {
+	return defaultEntry
 }
 
 func With(kvpair ...interface{}) *Entry {
